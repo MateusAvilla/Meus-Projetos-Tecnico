@@ -1,0 +1,13 @@
+fieldset{
+	background-image: linear-gradient(white, lightgreen);
+	border-color: green;
+	color: green;
+	max-width: 500px;
+	margin: auto;
+}
+
+legend{
+	background-color: LightCoral;
+	color: maroon;
+	border: 2px solid green;
+}

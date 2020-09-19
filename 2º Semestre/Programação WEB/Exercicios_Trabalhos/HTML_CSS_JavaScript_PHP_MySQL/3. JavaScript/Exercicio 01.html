@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+	
+		<script>
+
+			function Nome()
+		{
+			nome = document.form1.txtnome.value;
+			sobrenome = document.form1.txtsobrenome.value;
+			
+			//Verifica se o nome esta em branco
+			if (nome=="")
+			{
+				alert("Digite o seu nome");
+				document.form1.txtnome.focus();
+				return false;
+			}
+			
+			//Verifica se o valor digitado e um numero
+			if (isNaN(nome)==false)
+			{
+				alert("Números nao sao validos");
+				document.form1.txtnome.value="";
+				document.form1.txtnome.focus();
+				return false;
+	
+			}
+		
+
+			if (sobrenome=="")
+			{
+				alert("Digite o seu sobrenome");
+				document.form1.txtsobrenome.focus();
+				return false;
+			}
+			
+						//Verifica se o valor digitado é um texto
+			if (isNaN(nome)==true)
+			{
+				alert("Voce digitou: "+nome + " " + sobrenome);
+				return true
+			}
+
+		}
+
+		
+
+		</script>
+		
+	</head>	
+ 
+	<body style = "background-color: PowderBlue" >
+		
+		
+	
+		<form name=form1>
+		
+			<h1 style="color: Yellow" align=center>Digite o seu nome</h1>
+			
+			<center>
+			
+			<input type=text name="txtnome" size=60>
+			
+			
+		<br>
+			
+			<h1 style="color: Yellow" align=center>Digite o seu sobrenome</h1>
+			
+			
+			
+			<input type=text name = "txtsobrenome" size=60>
+			
+		<br>
+		<br>
+			
+			<input type=button value = "Enviar" onclick="Nome(); Sobrenome()">
+			
+			</center>
+			
+		</form>
+		
+
+	</body>
+	
+</html>

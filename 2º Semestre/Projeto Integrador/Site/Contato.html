@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	 <meta http-equiv="Content-Type"
+				 content="text/html; charset=UTF-8">
+	 <link rel="stylesheet" type="text/css" href="css/EstiloPagPrincipal.css">
+
+
+	 <title>
+						Formulario PHP
+	 </title>
+</head>
+
+<body>
+
+	<p>
+		<center>
+
+			<br>
+			<center>
+<div id="corpalavra">
+			<h2>
+				Entre em contato conosco! Preencha o formulário abaixo e nos envie sujestões ou reclamações
+			</h2>
+</div>
+			<br>
+			<br>
+			<br>
+			<br>
+
+		</center>
+	</p>
+
+<form name="solicitar" method="post" action="RecebeContato.php">
+				<center>
+
+					<table >
+
+						<tbody >
+
+							<tr>
+								<td><div id="corpalavra">Nome:</div></td>
+								<td><input  id = "nome" type = "text" name="nome" size="49%"></td>
+							</tr>
+							<tr>
+								<td><div id="corpalavra">E-Mail:</div></td>
+								<td><input id = "email" type = "text" name="email" size="49%"></td>
+							</tr>
+							<tr>
+								<td><div id="corpalavra">(Opcional) Telefone:</div></td>
+								<td><input id = "telefone" type="text" name="telefone" size="49%"></td>
+							</tr>
+							<tr>
+								<td><div id="corpalavra">Estado: </div></td>
+								<td>
+									<select id = "Estado" name = "Estado">
+
+										<option value="AC"> AC </option>
+										<option value="AL"> AL </option>
+										<option value="AP"> AP </option>
+										<option value="AM"> AM </option>
+										<option value="BA"> BA </option>
+										<option value="CE"> CE </option>
+										<option value="DF"> DF </option>
+										<option value="ES"> ES </option>
+										<option value="GO"> GO </option>
+										<option value="MA"> MA </option>
+										<option value="MT"> MT </option>
+										<option value="MS"> MS </option>
+										<option value="MG"> MG </option>
+										<option value="PA"> PA </option>
+										<option value="PB"> PB </option>
+										<option value="PR"> PR </option>
+										<option value="PE"> PE </option>
+										<option value="PI"> PI </option>
+										<option value="RJ"> RJ </option>
+										<option value="RN"> RN </option>
+										<option value="RS"> RS </option>
+										<option value="RO"> RO </option>
+										<option value="RR"> RR </option>
+										<option value="SC"> SC </option>
+										<option value="SP"> SP </option>
+										<option value="SP"> SE </option>
+										<option value="TO"> TO </option>
+
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div id="corpalavra">Selecione uma opção:</div>
+								</td>
+
+								<td>
+									<select id="tipo" name=" sure">
+
+									<option value = "sujestões">
+										Sujestões
+									</option>
+									<option value = "Reclamações">
+										Reclamações
+									</option>
+
+								</select>
+
+								</td>
+
+							</tr>
+
+							<tr>
+							<td><div id="corpalavra"> Sua Mensagem: </div></td>
+							<td><textarea rows="10" cols="50" name="mensagem"></textarea></td>
+							</tr>
+
+							<tr>
+
+								<center>
+								<td><input id = "botao" type="submit" value="Enviar"></td>
+								</center>
+
+							</tr>
+
+						</tbody>
+
+					</table>
+					</fieldset>
+
+				</center>
+
+			</form
+
+			<div id="voltar1">
+      <a href="index.html" target="_blank"><img src="img/93634.png"style="width:50px;height:50px;"></a>
+      </div>
+
+</body>
+
+</html>

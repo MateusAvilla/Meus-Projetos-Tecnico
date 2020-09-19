@@ -1,0 +1,2 @@
+cid = str(input('Em que cidade você nasceu? ')).strip().split() # dessa forma ele so  vai dar true se tiver so "santo" no comeco, e  vai  dar falso  se tiver  "santorini"
+print(cid[0].upper() == 'SANTO')
